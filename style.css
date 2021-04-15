@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #fff;
+	font-family: Raleway, sans-serif;
+	font-size: 16px;
+	color: #222;
+	line-height: 200%;
+}
+h1, h2, h3, h4 {
+	font-weight: 500;
+	font-family: 'Lato', sans-serif;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	color: #003C6A;
+	font-size: 1.7rem
+}
+h4 {
+	color: #003C6A;
+}
+.bg-light {
+    background-color: #fff!important;
+}
+.navbar {
+	font-family: 'Roboto', sans-serif;
+	padding: 8px 110px;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+.navbar-light .navbar-nav .nav-link {
+     color: #515151;
+     text-transform: uppercase;
+}
+.masthead {
+  height: 100vh;
+  min-height: 400px;
+  background-image: url('images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header-text {
+    background: #003C6A;
+    border-left: 10px solid #3DABFF!important;
+    color: #eee;
+    width: 35rem;
+    padding: 50px;
+    margin-top: 110px;
+    text-align: left;
+    border-radius: 0.5rem;
+}
+.header-text p {
+	font-size: 1.2rem;
+	text-transform: capitalize;
+}
+.btn-primary {
+	color: #003C6A;
+	background: #3DABFF;
+	border: none;
+	font-size: 0.9rem;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	padding: 8px;
+	width: 10rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	font-weight: 600;
+}
+.btn-primary a {
+	color: #003C6A;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+.btn-primary a:visited {
+  	color: #003C6A!important;
+}
+.btn-primary:hover {
+	background: #6CC0FF!important;
+	color: #003C6A!important;
+}
+.btn-primary a:active {
+	background: #6CC0FF!important;
+	color: #003C6A!important;
+}
+.why-section {
+	background: #eee;
+	border-radius: 0.5rem;
+	margin: 20px 45px;
+	padding: 30px;
+}
+.container {
+	width: 90%;
+	padding: 50px 0;
+}
+.row {
+	margin: 0;
+}
+.about {
+	text-align: left;
+	width: 70%;
+	margin: auto;
+	padding: 40px 0 60px 0;
+}
+.about p {
+	font-size: 1.2rem;
+}
+.services {
+	color: #333;
+	background: #eee;
+	padding: 60px;
+	margin: 0;
+}
+.banner {
+	background: #003C6A;
+	border-left: 10px solid #3DABFF!important;
+	color: #eee;
+	font-size: 1.3rem;
+	padding: 20px;
+	margin: 90px 0;
+	border-radius: 2px;
+	text-transform: capitalize;
+	font-family: 'Lato', sans-serif;
+}
+.banner span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+	font-weight: 500;
+	padding: 3px;
+}
+.trust {
+	text-transform: capitalize;
+}
+.footer-list {
+	list-style-type: none;
+	text-align: left;
+	padding: 30px 10px;
+}
+.footer-list li {
+	font-size: 1.1rem;
+	font-family: 'Roboto', sans-serif;
+}
+.form-wrapper {
+	background: #333;
+	color: #eee;
+	padding: 15px 20px;
+	border-radius: 30px 20px 30px 100px;
+	text-align: center;
+}
+.form-group {
+	padding-top: 4px;
+	text-align: left;
+	font-family: sans-serif;
+}
+.footer-section {
+	font-family: sans-serif;
+	background: #222;
+	color: #eee;
+	padding: 50px 0;
+	margin: 0px;
+}
+.footer-section h4 {
+	color: #eee;
+}
+.social-icons {
+	background: #222;
+	text-align: right;
+	padding-right: 20px;
+}
+.social-icons ul {
+	margin-bottom: 0px !important;
+	padding-bottom: 10px;
+	padding-right: 60px;
+}
+.social-icons li {
+	display: inline;
+	text-decoration: none;
+	padding-right: 4px;
+}
+#footer {
+	font-size: 0.9rem;
+	padding: 5px 0;
+	background: #333;
+	font-family: sans-serif;
+	color: #eee;
+}
+/*to top*/
+.go-top {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	text-decoration: none;
+	color: #f1f1f1;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 0.7rem;
+}
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #f1f1f1;
+	text-decoration: none;
+}
+/*animations*/
+.section-appear {
+	opacity: 0;
+	transform: translateY(8px);
+	transition: 1s all ease-in-out;
+	will-change: transform, opacity;
+}
+.section-appear.is-visible {
+	opacity:  1;
+	transform: rotateY(0px);
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		padding: 5px;
+	}
+	.services h2 {
+		padding: 10px 0;
+	}
+	.banner h3 {
+		padding: 20px 0;
+	}
+	.banner p {
+		line-height: 200%;
+	}
+	.form-wrapper {
+		padding-top: 30px;
+		margin-top: 30px;
+	}
+}
